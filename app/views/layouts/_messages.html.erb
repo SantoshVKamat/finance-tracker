@@ -1,0 +1,14 @@
+<div class="row">
+	<div class="col-9">
+		<% flash.each do |name,msg| %>
+				<% if name == "notice" %>
+					<div class="alert alert-success" role="alert">
+				<% elsif name == "alert"%>
+					<div class="alert alert-danger" role="alert">
+				<% end %>
+				  <%=msg%>
+				</div>
+		<% end %>
+	</div>
+</div>		
+
